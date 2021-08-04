@@ -14,7 +14,7 @@
         $id = $_POST['id'];
         $name = $_POST['name'];
         $phone_no = $_POST['phone_no'];
-        
+        $admit_date = $_POST['admit_date'];
         $dob = $_POST['dob'];
         $issue = $_POST['issue'];
         $blood_group = $_POST['blood_group'];
@@ -28,8 +28,8 @@
                 echo "<br><b>Redirecting to patient registration page</b>";
         }
         else{
-                $sql = "INSERT INTO patientTable (id ,patient_username , patient_phone_no , patient_dob  , health_issue , blood_group ,branch_name)
-                 VALUES ($id ,'$name' , $phone_no , '$dob'  , '$issue' , '$blood_group' , '$branch');";
+                $sql = "INSERT INTO patientTable (id ,patient_username , patient_phone_no , patient_dob ,patient_admit_date , health_issue , blood_group ,branch_name)
+                 VALUES ($id ,'$name' , $phone_no , '$dob' ,'$admit_date' , '$issue' , '$blood_group' , '$branch');";
                 $result = $conn->query($sql);
                 if($result == TRUE){
                     echo "<b>Insertion was successful</b>";
