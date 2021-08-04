@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    #contanier{
+        text-align : center;
+    }
+    button{
+        display : inline-block;
+    }
+    div{
+        background-color: rgb(197, 199, 56);
+    }
+    #toright{
+        position: fixed; /* or position: absolute; */
+        top: 0;
+        right: 0;
+        margin-top: 5px;
+    }
+    </style>
+    
+    <title>Admin Access Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <header >
+        <div id="toright" >
+            <button class="btn btn-warning" id="signout">SIGN OUT</button>
+        </div>
+            
+    </header>
+    <center>
+        <div class="card mt-5 col-12" style="width: 90%;">
+            <div class="card-body" id="contanier">
+                <center><h5 class="card-title"><b><u>Create new branch</u></b></h5></center>
+                <a href="./createHtmlFiles/createBranch.html"><button class="btn btn-light">Create</button></a>
+            </div>
+        </div>
+    </center>
+
+    <center>
+        <div class="card mt-5 col-12" style="width: 90%;">
+            <div class="card-body" id="contanier">
+                <center><h5 class="card-title"><b><u>Create new staff</u></b></h5></center>
+                <a href="./createHtmlFiles/createStaff.html"><button class="btn btn-light">Create</button></a>
+            </div>
+        </div>
+    </center>
+
+    <center>
+        <div class="card mt-5 col-12" style="width: 90%;">
+            <div class="card-body" id="contanier">
+                <center><h5 class="card-title"><b><u>Create new doctor</u></b></h5></center>
+                <a href="./createHtmlFiles/createDoctor.html"><button class="btn btn-light">Create</button></a>
+            </div>
+        </div>
+    </center>
+
+    <center>
+        <div class="card mt-5 col-12" style="width: 90%;">
+            <div class="card-body" id="contanier">
+                <center><h5 class="card-title"><b><u>Create new admin</u></b></h5></center>
+                <a href="./createHtmlFiles/createAdmin.html"><button class="btn btn-light">Create</button></a>
+            </div>
+        </div>
+    </center>
+    
+    <script src="signOut.js"></script>
+
+   
+    
+</body>
+</html>
